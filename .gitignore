@@ -1,0 +1,10 @@
+dog-project.zip
+/dog-project/*
+/dogImages/*
+/haarcascades/*
+/images/*
+/lfw/*
+model_scratch.pt
+model_transfer.pt
+report.html
+workspace_utils.py
