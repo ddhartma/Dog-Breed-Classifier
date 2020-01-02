@@ -6,5 +6,5 @@ dog-project.zip
 /lfw/*
 model_scratch.pt
 model_transfer.pt
-report.html
 workspace_utils.py
+report.html
