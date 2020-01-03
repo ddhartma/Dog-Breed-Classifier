@@ -1,10 +1,9 @@
 dog-project.zip
 /dog-project/*
-/dogImages/*
+/dog_images/*
 /haarcascades/*
 /images/*
 /lfw/*
 model_scratch.pt
 model_transfer.pt
 workspace_utils.py
-report.html
