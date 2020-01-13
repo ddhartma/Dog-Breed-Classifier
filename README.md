@@ -4,13 +4,13 @@
 
 # Dog Breed Classifier
 
-In this project, I build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, the algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed. The human and dog identification algorithm is based on Convolutional Neural Networks (CNN).
+In this project, I build a neural network pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, the algorithm will identify an estimate of the canine’s breed. If an image of a human face is supplied, the code will identify the resembling dog breed. The human and dog identification algorithm is based on Convolutional Neural Networks (CNN).
 
-In this real-world setting, a series of models must piece together to perform different tasks; for instance, the algorithm that detects humans in an image will be different from the CNN that infers dog breed.
+In this real-world setting, a series of models must fit together to perform different tasks; for instance, the algorithm that detects a human face in an image will be different from the CNN that infers a dog breed.
 
-Human Face detection is realized via an cv2 [face detector](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_objdetect/py_face_detection/py_face_detection.html) as well as a “Multi-Task Cascaded Convolutional Neural Network,” or MTCNN for short, described by [Kaipeng Zhang, et al.](http://kpzhang93.github.io/) in the 2016 paper titled “Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks”.
+Human face detection is realized via an [cv2 face detector](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_objdetect/py_face_detection/py_face_detection.html) as well as a “Multi-Task Cascaded Convolutional Neural Network,” or MTCNN for short, described by [Kaipeng Zhang, et al.](http://kpzhang93.github.io/) in the 2016 paper titled “Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks”.
 
-The dog breed classification is realized in two approaches:
+The dog breed classification is realized in two different approaches:
 1. by using an own CNN based architecture as a model with a layer combination of three times 'Conv-ReLU-MaxPool', deeply enough for a feature extraction and an appropriate image size/feature reduction. However, the accuracy is limited to 15%.
 2. by using a CNN based pretrained VGG19 model from Torchvision via Transfer Learning. VGG19 enables a classification of the 133 possible dog breeds in the dataset. Only the last layer (the classifier) of VGG19 is exchanged to adjust the number of classes. The number of classes in the VGG19 approach is 1000. In the dog-breed-project there are only 133 classes. Hence, only the number of 'out_features' in classifier(6) is replaced by 133.
 
