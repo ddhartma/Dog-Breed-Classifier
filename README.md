@@ -16,6 +16,7 @@ The dog breed classification is realized in two different approaches:
 
 ![Sample Output][image1]
 
+This is a project of the Udacity Nanodegree program 'Deep Learning'. Please check this [link](https://www.udacity.com/course/deep-learning-nanodegree--nd101) for more information.
 
 ## Getting Started
 
@@ -117,3 +118,6 @@ If your code is taking too long to run, you will need to either reduce the compl
 #### Amazon Web Services
 
 You can use Amazon Web Services to launch an [EC2 GPU instance](https://aws.amazon.com/de/ec2/). However, this service is not for free.
+
+## Acknowledgments
+* This is a project of the Udacity Nanodegree program 'Deep Learning'. Please check this [link](https://www.udacity.com/course/deep-learning-nanodegree--nd101) for more information.
