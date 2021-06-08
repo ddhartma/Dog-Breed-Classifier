@@ -2,7 +2,7 @@ tqdm==4.31.1
 torch==1.3.1
 numpy==1.17.4
 mtcnn==0.0.9
-pillow==6.2.1
+pillow==8.2.0
 opencv-python==4.1.1.26
 matplotli==3.1.0
 keras==2.2.5
